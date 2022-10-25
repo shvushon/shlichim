@@ -393,4 +393,4 @@ document.getElementById('komo').innerHTML += ` ${komo[getRandomInt(komo.length)]
 const phone = document.getElementById('phone')
 phone.innerHTML = '0' + numbers[getRandomInt(numbers.length)];
 
-phone.href = 'https://wa.me/972' + phone.innerHTML;
+phone.href = 'https://wa.me/972' + phone.innerHTML + '?text=היי,+אשמח+לשמוע+פרטים+על+השליחות+בסניף+המגניב+שלכם.';
