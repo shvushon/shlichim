@@ -21,8 +21,8 @@ body {
   margin: 1rem 0;
   background-color: #fff;
   box-shadow: rgb(219, 221, 222) 0px 0px 4px 1px, rgb(187, 193, 196) 0px 1px 15px 6px;
-  width: 95%;
-  line-height: 80%;
+  width: 95vw;
+  line-height: 90%;
 }
 
 button {
