@@ -27,5 +27,6 @@ body {
 button {
   background-color: #76b5c5;
   width: 40%;
+  height: 3rem;
   border-radius: 10px;
 }
