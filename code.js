@@ -7,7 +7,6 @@ const tearim_shaliach = `שפיץ
 חולה בראש
 חולה בנשמה
 חולה בגוף
-אוהב את אחותך
 בן אנד ג'ריס
 אוהב את החיים
 אח יקר ואהוב
@@ -308,6 +307,7 @@ const komo = `אורי'ה
 פנינה
 לאה
 טליה
+אורה
 אודי'ה
 נוי'ה
 נועה
@@ -384,11 +384,7 @@ document.getElementById('alenu').innerHTML += s + ' - עלינווו';
 
 document.getElementById('snif2').innerHTML += snif + getEmoji();
 
-const index1 = getRandomInt(komo.length);
-const s2 = komo[index1];
-document.getElementById('komo').innerHTML = s2;
-komo.splice(index1);
-document.getElementById('komo').innerHTML += ` ${komo[getRandomInt(komo.length)]} הקומונרית:`;
+document.getElementById('komo').innerHTML += `${komo[getRandomInt(komo.length)]} ${komo[getRandomInt(komo.length)]} הקומונרית:`;
 
 const phone = document.getElementById('phone')
 phone.innerHTML = '0' + numbers[getRandomInt(numbers.length)];
