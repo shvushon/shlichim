@@ -394,3 +394,36 @@ const phone = document.getElementById('phone')
 phone.innerHTML = '0' + numbers[getRandomInt(numbers.length)];
 
 phone.href = 'https://wa.me/972' + phone.innerHTML + '?text=היי,+אשמח+לשמוע+פרטים+על+השליחות+בסניף+המגניב+שלכם.';
+
+let whatsappLinkText;
+const whatsappLink = document.getElementById('shareBtn');
+
+window.shareViaWhatsapp = () => {
+    whatsappLinkText = 'https://api.whatsapp.com/send?text='
+    whatsappLinkText += document.getElementById('tearim-shlichim').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('snif').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('tearim-snif').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('mehapes').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('alenu').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('avira').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('mehacim').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('snif2').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('komo').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += document.getElementById('phone').innerText;
+    whatsappLinkText += '%0a'
+    whatsappLinkText += '%0a'
+    whatsappLinkText += 'הודעת שליחים זו נוצרה ע"י שליחון. נסו את שליחון בקישור:'
+    whatsappLinkText += '%0a'
+    whatsappLinkText += 'http://shvushon.github.io/shlichim'
+    whatsappLink.setAttribute('href', whatsappLinkText)
+    console.log(whatsappLinkText)   
+}
